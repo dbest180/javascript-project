@@ -24,6 +24,9 @@ function upDate(previewPic) {
     
     // Change the text to the preview image's alt text
     imageDiv.innerHTML = previewPic.alt;
+    
+    // Remove blur effect from the current image
+    previewPic.style.filter = "blur(0px)";
 }
 
 function unDo() {
@@ -46,6 +49,12 @@ function unDo() {
     
     // Reset the text to the original message
     imageDiv.innerHTML = "Hover over an image below to display here.";
+    
+    // Re-apply blur effect to all preview images
+    let previewImages = document.getElementsByClassName('preview');
+    for (let i = 0; i < previewImages.length; i++) {
+        previewImages[i].style.filter = "blur(3px)";
+    }
 }
 
 function addTabFocus() {
@@ -59,9 +68,11 @@ function addTabFocus() {
     // Get all elements with class "preview"
     let previewImages = document.getElementsByClassName('preview');
     
-    // Loop through each image and add tabindex attribute
+    // Loop through each image and add tabindex attribute and initial blur
     for (let i = 0; i < previewImages.length; i++) {
         previewImages[i].setAttribute('tabindex', '0');
-        console.log("Added tabindex to image:", previewImages[i].alt);
+        previewImages[i].style.filter = "blur(3px)";
+        previewImages[i].style.transition = "filter 0.3s ease";
+        console.log("Added tabindex and blur to image:", previewImages[i].alt);
     }
 }
