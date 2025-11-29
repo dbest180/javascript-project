@@ -8,9 +8,19 @@
 </head>
 <body onload="addTabFocus()">
 	
-	<div id="image">
-		Hover over an image below to display here.
-	</div>
+	<a href="#gallery" class="skip-link">Skip to Gallery</a>
+	
+	<header role="banner">
+		<h1>Interactive Photo Gallery</h1>
+		<p>Explore stunning landscapes from around the world</p>
+	</header>
+	
+	<main role="main">
+		<div id="image" role="img" aria-live="polite" aria-label="Main image display area">
+			Hover over an image below to display here.
+		</div>
+		
+		<section id="gallery" role="region" aria-label="Image gallery thumbnails">
 	
 	<img class="preview" alt="Mountain peaks at sunset with alpine lake" src="images/mountain-sunset.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
 	
