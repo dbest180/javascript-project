@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="css/gallery.css">
+</head>
+<body onload="addTabFocus()">
+	
+	<div id="image">
+		Hover over an image below to display here.
+	</div>
+	
+	<img class="preview" alt="Mountain peaks at sunset with alpine lake" src="images/mountain-sunset.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+	
+	<img class="preview" alt="Tropical beach with palm trees and turquoise water" src="images/tropical-beach.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+	
+	<img class="preview" alt="Forest path covered in autumn leaves" src="images/autumn-forest.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+	
+	<img class="preview" alt="Illuminated city skyline at twilight" src="images/city-skyline.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+	
+	<img class="preview" alt="Purple lavender field in French countryside" src="images/lavender-field.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+	
+	<img class="preview" alt="Northern lights over snowy landscape" src="images/northern-lights.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+	
+	<img class="preview" alt="Cherry blossoms in Japanese garden" src="images/cherry-blossoms.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+	
+	<img class="preview" alt="Golden sand dunes at sunrise" src="images/desert-dunes.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+	
+	<img class="preview" alt="Waterfall flowing through rainforest" src="images/rainforest-waterfall.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+	<script src="js/gallery.js"></script>
+</body>
+</html>
