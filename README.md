@@ -1,2 +1,2 @@
-# favascript-project
+# javascript-project
 Coursera Final Project
